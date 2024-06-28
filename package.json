@@ -1,0 +1,19 @@
+{
+  "name": "hexo-beauty-pack",
+  "version": "1.0.0",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Hexo Plugin for personal use.",
+  "dependencies": {
+    "dom-serializer": "^2.0.0",
+    "hexo-log": "^4.1.0",
+    "htmlparser2": "^9.1.0"
+  },
+  "devDependencies": {
+    "hexo": "^7.2.0"
+  }
+}
