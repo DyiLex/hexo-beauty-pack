@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "Hexo Plugin for personal use.",
   "dependencies": {
     "dom-serializer": "^2.0.0",
