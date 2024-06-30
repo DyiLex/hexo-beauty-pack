@@ -1,6 +1,6 @@
 {
   "name": "hexo-beauty-pack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "dom-serializer": "^2.0.0",
-    "hexo-beauty-pack": "^1.0.1",
     "hexo-log": "^4.1.0",
     "htmlparser2": "^9.1.0"
   },
