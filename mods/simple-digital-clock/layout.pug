@@ -1,0 +1,21 @@
+#simple-digital-clock
+    div &ensp;
+    div &ensp;
+    if config.time_format_24_hour
+        div &ensp;
+    else
+        div
+            span &ensp;
+            span(style="padding-left: 16px") &ensp;
+    style
+        | #simple-digital-clock {
+        |   --simple-digital-clock-color: !{config.color}
+        | }
+        |
+        include style.css
+    script
+        | const SDC_CONFIG = {
+        |   time_format_24_hour: !{config.time_format_24_hour}
+        | }
+        |
+        include action.js

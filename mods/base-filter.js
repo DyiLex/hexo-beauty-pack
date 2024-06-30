@@ -10,7 +10,6 @@ module.exports = class BaseFilter {
         NEW_POST_PATH: 'new_post_path',
         POST_PERMALINK: 'post_permalink',
         AFTER_RENDER_HTML: 'after_render:html',
-        AFTER_RENDER_PUG: 'after_render:pug',
         SERVER_MIDDLEWARE: 'server_middleware'
     }
 
@@ -25,7 +24,7 @@ module.exports = class BaseFilter {
         this.#filter.register(type, fn, priority)
     }
 
-    execSync(type, data, options) {
-        return this.#filter.execSync(type, data, options)
+    registerAfterRenderHtml(filter, priority) {
+        this.register(BaseFilter.FILTER_TYPE.AFTER_RENDER_HTML, filter, priority)
     }
 }

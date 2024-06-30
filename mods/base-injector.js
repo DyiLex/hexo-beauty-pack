@@ -25,4 +25,22 @@ module.exports = class BaseInjector {
     register(entry, value, to) {
         this.#injector.register(entry, value, to)
     }
+
+    inject2HeadEnd(str, injectTo) {
+        this.register(BaseInjector.INJECTOR_ENTRY.HEAD_END, () => str, injectTo)
+    }
+
+    inject2BodyEnd(str, injectTo) {
+        this.register(BaseInjector.INJECTOR_ENTRY.BODY_END, () => str, injectTo)
+    }
+
+    injectCss(href, injectTo) {
+        let link = `<link rel="stylesheet" href="${href}">`
+        this.inject2HeadEnd(link, injectTo)
+    }
+
+    injectJs(src, injectTo) {
+        let js = `<script src="${src}"></script>`
+        this.inject2HeadEnd(js, injectTo)
+    }
 }

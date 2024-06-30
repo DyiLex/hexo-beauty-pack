@@ -1,39 +1,34 @@
-:root {
-    --sitedate-color: #eee;
-}
-
-#site-date {
-    color: var(--sitedate-color);
+#simple-digital-clock {
+    color: var(--simple-digital-clock-color);
     line-height: 1;
     text-align: center;
     margin-top: 16px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-#site-date div:nth-child(1) {
+#simple-digital-clock div:nth-child(1) {
     font-size: 1.376em;
     font-style: italic;
 }
 
-#site-date div:nth-child(2) {
+#simple-digital-clock div:nth-child(2) {
     font-size: 2.048em;
     font-style: italic;
 }
 
-#site-date div:nth-child(3) {
+#simple-digital-clock div:nth-child(3) {
     font-size: 1.024em;
 }
 
 @media screen and (min-width: 768px) {
-    #site-date div:nth-child(1) {
+    #simple-digital-clock div:nth-child(1) {
         font-size: 2.56em;
     }
     
-    #site-date div:nth-child(2) {
+    #simple-digital-clock div:nth-child(2) {
         font-size: 3.84em;
     }
     
-    #site-date div:nth-child(3) {
+    #simple-digital-clock div:nth-child(3) {
         font-size: 2em;
     }
 }

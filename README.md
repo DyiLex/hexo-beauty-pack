@@ -1,5 +1,5 @@
 ## 简介
-个人向Hexo插件，目的是添加一些小功能或美化而不改动主题代码。
+个人向自用Hexo插件，目的是添加一些小功能或美化而不改动主题代码。
 
 ## 安装
 ``` bash
@@ -7,21 +7,26 @@ $ npm install hexo-beauty-pack --save
 ```
 
 ## 功能
-### 简单时钟组件
-简单的文本时钟，显示当前月/日/时间/周几
+
+### 列表
+- [x] 简单数字时钟
+
+### 简单数字时钟
+简单的数字文本时钟，显示当前月/日/时间/周几
+
 #### 插件配置
+
+_config.yml添加以下配置项
+
 ``` yaml
-# 添加到Hexo配置文件_config.yml
-# 插件配置项
-sitedate:
-    enable: true                # 是否启用。默认：true
-    mount_dom_id: "site-info"   # 组件挂载元素ID。默认：site-info
-    color: "#eee"               # 时钟颜色。默认："#eee"
-    date_fns_url:               # date-fns.js链接。默认jsdelivr
-    priority: 10                # 插件优先级。默认：10
+simple_digital_clock:
+    enable: true                # 是否启用组件
+    color: "#eee"               # 时钟文本颜色
+    priority: 10                # 插件优先级
+    dayjs_cdn:                  # dayjs的cdn链接
+    mount_dom_id: "site-info"   # 组件挂载dom-id
+    time_format_24_hour: true   # 是否24小时制
 ```
-### 更多功能开发中
-- [] 还没想好做啥
 
 ## 开源软件许可协议
 MIT
