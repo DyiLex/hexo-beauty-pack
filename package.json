@@ -5,7 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "DyiLex/hexo-beauty-pack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DyiLex/hexo-beauty-pack.git"
+  },
   "author": "DyiLex",
   "license": "MIT",
   "description": "Hexo Plugin for personal use.",
