@@ -1,0 +1,10 @@
+#ip-location-info {
+    word-break: break-all;
+}
+
+#ip-location-info-loc,
+#ip-location-info-distance {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--ip-location-info-color)
+}

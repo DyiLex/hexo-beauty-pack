@@ -2,9 +2,11 @@ const log = require('hexo-log').default({
   debug: false,
   silent: false
 })
+const { version } = require('./package.json')
 
-new (require('./mods/common-helper'))(hexo).doRegister()
-new (require('./mods/common-mod'))(hexo).modify()
-new (require('./mods/simple-digital-clock'))(hexo).modify()
+const mod = new (require('./mods/common-mod'))(hexo)
+mod.registerMod(new (require('./mods/simple-digital-clock'))(hexo))
+mod.registerMod(new (require('./mods/ip-location-info'))(hexo))
+mod.modify()
 
-log.info('hexo-beauty-pack has done this!')
+log.info(`[v${version}] Hexo-beauty-pack has done this!`)

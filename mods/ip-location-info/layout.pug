@@ -1,0 +1,24 @@
+#ip-location-info
+    | 欢迎来自
+    | 
+    span(id='ip-location-info-loc') (●'◡'●)
+    | 
+    | 的大佬，和大佬的距离有
+    |
+    span(id='ip-location-info-distance') (●'◡'●)
+    | 
+    | 公里那么远~
+    div !{config.welcome_message}
+    style
+        | #ip-location-info {
+        |   --ip-location-info-color: !{config.color}
+        | }
+        |
+        include style.css
+    script
+        | const ILI_CONFIG = {
+        |   amap_api_key: '!{config.amap_api_key}',
+        |   live_lat_lng: [ !{config.live_lat_lng} ]
+        | }
+        |
+        include action.js
