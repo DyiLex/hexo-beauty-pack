@@ -16,9 +16,12 @@
         |
         include style.css
     script
-        | const ILI_CONFIG = {
+        | !(function() {
+        | const CONFIG_ILI = {
         |   amap_api_key: '!{config.amap_api_key}',
         |   live_lat_lng: [ !{config.live_lat_lng} ]
         | }
         |
         include action.js
+        |
+        | })()

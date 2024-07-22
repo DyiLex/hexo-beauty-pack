@@ -14,8 +14,11 @@
         |
         include style.css
     script
-        | const SDC_CONFIG = {
-        |   time_format_24_hour: !{config.time_format_24_hour}
-        | }
+        | !(function() {
+        |     const CONFIG_SDC = {
+        |         time_format_24_hour: !{config.time_format_24_hour}
+        |     }
         |
         include action.js
+        |
+        | })()
